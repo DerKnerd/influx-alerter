@@ -1,0 +1,40 @@
+import 'dart:io';
+
+import 'package:args/args.dart';
+import 'package:logging/logging.dart';
+import 'package:terrarium_alerting/alerts/checker.dart';
+import 'package:terrarium_alerting/models/parser.dart';
+import 'package:yaml/yaml.dart';
+
+void main(List<String> arguments) async {
+  Logger.root.level = Level.INFO;
+  Logger.root.onRecord.listen((event) {
+    print(event);
+  });
+
+  final logger = Logger('App');
+
+  final command = ArgParser();
+  command.addOption(
+    'config-file',
+    abbr: 'c',
+    defaultsTo: Directory.current.absolute.path + '/config/config.yaml',
+  );
+
+  final result = command.parse(arguments);
+  logger.info('Parse config');
+  var config;
+
+  final file = File(result['config-file']);
+  final doc = loadYaml(await file.readAsString());
+
+  try {
+    config = await parseConfig(doc);
+  } catch (e, s) {
+    logger.severe(e, e, s);
+    exit(1);
+  }
+
+  logger.info('Check alerts');
+  await checkAlerts(config);
+}

@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  terrarium-alerting:
+    image: mailhog/mailhog
+    ports:
+      - 1125:1025
+      - 8825:8025
+    restart: always
