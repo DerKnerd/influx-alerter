@@ -37,4 +37,5 @@ void main(List<String> arguments) async {
 
   logger.info('Check alerts');
   await checkAlerts(config);
+  exit(0);
 }
