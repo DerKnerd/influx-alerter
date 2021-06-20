@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/terrarium_alerting.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/influx_alerter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/entrypoint.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/alerts/checker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/alerts/checker.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/config.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/parser.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/parser.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/target/smtpTarget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/target/smtpTarget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/target/telegramTarget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/target/telegramTarget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terrarium_alerting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/influx_alerter.iml" afterDir="false" />
+    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#2 Fix package naming&#10;&#10;Update old name to the correct recent name">
+      <change afterPath="$PROJECT_DIR$/config.yaml.sample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +58,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624148036880</updated>
-      <workItem from="1624148040380" duration="1418000" />
+      <workItem from="1624148040380" duration="2626000" />
     </task>
+    <task id="LOCAL-00001" summary="#2 Fix package naming&#10;&#10;Update old name to the correct recent name">
+      <created>1624151158643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624151158643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +83,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#2 Fix package naming&#10;&#10;Update old name to the correct recent name" />
+    <option name="LAST_COMMIT_MESSAGE" value="#2 Fix package naming&#10;&#10;Update old name to the correct recent name" />
   </component>
 </project>

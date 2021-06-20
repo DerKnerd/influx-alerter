@@ -1,0 +1,41 @@
+org: <Influx Organization>
+token: <Influx Token>
+server: influx.example.com
+logLevel: info
+targets:
+  - type: telegram
+    botToken: <Telegram Bot Token>
+    chatIds:
+      - <ID of the chat to send messages to>
+  - type: smtp
+    from: noreply@example.com
+    host: mail.example.com
+    port: 587|465|25
+    username: noreply@example.com
+    password: <Server password>
+    to: influx@example.com
+alerts:
+  - type: hourRange
+    flux: |
+      from(bucket: "terrarien")
+        |> range(start: -10h, stop: now())
+        |> filter(fn: (r) => r["_measurement"] == "value")
+        |> filter(fn: (r) => r["_field"] == "value")
+        |> last()
+    threshold: 25
+    thresholdType: above
+    message: The value is above the treshold, please check
+    name: The value is above the treshold, please check
+    afterHour: 11
+    beforeHour: 21
+  - type: value
+    flux: |
+      from(bucket: "mybucket")
+        |> range(start: -10h, stop: now())
+        |> filter(fn: (r) => r["_measurement"] == "value")
+        |> filter(fn: (r) => r["_field"] == "value")
+        |> last()
+    threshold: 20
+    thresholdType: below
+    message: The value is above the treshold, please check
+    name: The value is above the treshold, please check
