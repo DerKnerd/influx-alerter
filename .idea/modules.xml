@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/terrarium_alerting.iml" filepath="$PROJECT_DIR$/terrarium_alerting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/influx_alerter.iml" filepath="$PROJECT_DIR$/.idea/influx_alerter.iml" />
     </modules>
   </component>
 </project>

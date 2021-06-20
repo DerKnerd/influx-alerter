@@ -1,5 +1,5 @@
-import 'package:terrarium_alerting/models/alert.dart';
-import 'package:terrarium_alerting/models/target.dart';
+import 'package:influx_alerter/models/alert.dart';
+import 'package:influx_alerter/models/target.dart';
 
 class Configuration {
   String org;

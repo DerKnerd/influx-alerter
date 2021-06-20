@@ -1,6 +1,6 @@
 import 'package:teledart/teledart.dart';
 import 'package:teledart/telegram.dart';
-import 'package:terrarium_alerting/models/target.dart';
+import 'package:influx_alerter/models/target.dart';
 
 class TelegramTarget extends MessageTarget {
   String botToken;

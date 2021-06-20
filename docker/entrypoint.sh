@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-dart run /app/bin/terrarium_alerting.dart
+dart run /app/bin/influx_alerter.dart

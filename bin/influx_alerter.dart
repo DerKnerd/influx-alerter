@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:args/args.dart';
 import 'package:logging/logging.dart';
-import 'package:terrarium_alerting/alerts/checker.dart';
-import 'package:terrarium_alerting/models/parser.dart';
+import 'package:influx_alerter/alerts/checker.dart';
+import 'package:influx_alerter/models/parser.dart';
 import 'package:yaml/yaml.dart';
 
 void main(List<String> arguments) async {

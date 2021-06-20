@@ -1,7 +1,7 @@
 import 'package:logging/logging.dart';
 import 'package:mailer/mailer.dart' as mailer;
 import 'package:mailer/smtp_server.dart';
-import 'package:terrarium_alerting/models/target.dart';
+import 'package:influx_alerter/models/target.dart';
 
 class SmtpTarget extends MessageTarget {
   String host;

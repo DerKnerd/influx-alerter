@@ -1,8 +1,8 @@
 import 'package:influxdb_client/api.dart';
 import 'package:logging/logging.dart';
-import 'package:terrarium_alerting/models/alert.dart';
-import 'package:terrarium_alerting/models/config.dart';
-import 'package:terrarium_alerting/models/target.dart';
+import 'package:influx_alerter/models/alert.dart';
+import 'package:influx_alerter/models/config.dart';
+import 'package:influx_alerter/models/target.dart';
 
 Future checkAlerts(Configuration configuration) async {
   final logger = Logger('Checker');

@@ -1,9 +1,9 @@
 import 'package:logging/logging.dart';
-import 'package:terrarium_alerting/models/alert.dart';
-import 'package:terrarium_alerting/models/config.dart';
-import 'package:terrarium_alerting/models/target.dart';
-import 'package:terrarium_alerting/models/target/smtpTarget.dart';
-import 'package:terrarium_alerting/models/target/telegramTarget.dart';
+import 'package:influx_alerter/models/alert.dart';
+import 'package:influx_alerter/models/config.dart';
+import 'package:influx_alerter/models/target.dart';
+import 'package:influx_alerter/models/target/smtpTarget.dart';
+import 'package:influx_alerter/models/target/telegramTarget.dart';
 
 Future<Configuration> parseConfig(Map yaml) async {
   final logger = Logger('Config parser');
