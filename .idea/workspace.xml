@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#2 Fix package naming&#10;&#10;Update old name to the correct recent name">
-      <change afterPath="$PROJECT_DIR$/config.yaml.sample" afterDir="false" />
+    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#3 Add sample config&#10;&#10;Added a sample config file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml.sample" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml.sample" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624148036880</updated>
-      <workItem from="1624148040380" duration="2626000" />
+      <workItem from="1624148040380" duration="3696000" />
     </task>
     <task id="LOCAL-00001" summary="#2 Fix package naming&#10;&#10;Update old name to the correct recent name">
       <created>1624151158643</created>
@@ -67,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624151158643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="#3 Add sample config&#10;&#10;Added a sample config file">
+      <created>1624152556891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624152556891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +94,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#2 Fix package naming&#10;&#10;Update old name to the correct recent name" />
-    <option name="LAST_COMMIT_MESSAGE" value="#2 Fix package naming&#10;&#10;Update old name to the correct recent name" />
+    <MESSAGE value="#3 Add sample config&#10;&#10;Added a sample config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="#3 Add sample config&#10;&#10;Added a sample config file" />
   </component>
 </project>

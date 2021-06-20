@@ -39,3 +39,12 @@ alerts:
     thresholdType: below
     message: The value is above the treshold, please check
     name: The value is above the treshold, please check
+  - type: deadman
+    flux: |
+      from(bucket: "mybucket")
+        |> range(start: -10h, stop: now())
+        |> filter(fn: (r) => r["_measurement"] == "value")
+        |> filter(fn: (r) => r["_field"] == "value")
+        |> last()
+    message: The value is above the treshold, please check
+    name: The value is above the treshold, please check
