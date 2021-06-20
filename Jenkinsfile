@@ -38,7 +38,7 @@ spec:
                     sh "dart pub get"
                     sh "dart pub get --offline"
                     sh "dart compile exe bin/influx_alerter.dart -o bin/influx_alerter"
-                    archiveArtifacts artifacts: 'influx_alerter', followSymlinks: false, onlyIfSuccessful: true
+                    archiveArtifacts artifacts: 'bin/influx_alerter', followSymlinks: false, onlyIfSuccessful: true
                 }
             }
         }
