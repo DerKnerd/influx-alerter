@@ -5,6 +5,7 @@ import 'package:logging/logging.dart';
 import 'package:influx_alerter/alerts/checker.dart';
 import 'package:influx_alerter/models/parser.dart';
 import 'package:yaml/yaml.dart';
+import 'package:path/path.dart' as p;
 
 void main(List<String> arguments) async {
   Logger.root.level = Level.INFO;
@@ -18,7 +19,8 @@ void main(List<String> arguments) async {
   command.addOption(
     'config-file',
     abbr: 'c',
-    defaultsTo: Directory.current.absolute.path + '/config/config.yaml',
+    defaultsTo:
+        p.join(Directory.current.absolute.path, 'config', 'config.yaml'),
   );
 
   final result = command.parse(arguments);

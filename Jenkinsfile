@@ -22,11 +22,26 @@ spec:
     volumeMounts:
     - mountPath: /var/run/docker.sock
       name: docker-sock
+  - name: dart
+    image: dart:stable
+    command:
+    - cat
+    tty: true
 '''
             defaultContainer 'docker'
         }
     }
     stages {
+        stage('Build binary') {
+            steps {
+                container('dart') {
+                    sh "dart pub get"
+                    sh "dart pub get --offline"
+                    sh "dart compile exe bin/influx_alerter.dart -o bin/influx_alerter"
+                    archiveArtifacts artifacts: 'influx_alerter', followSymlinks: false, onlyIfSuccessful: true
+                }
+            }
+        }
         stage('Push') {
             steps {
                 container('docker') {

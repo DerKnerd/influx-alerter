@@ -14,3 +14,4 @@ dependencies:
   logging:
   teledart: 0.1.6
   mailer:
+  path:
