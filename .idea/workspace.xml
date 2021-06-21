@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#4 Update content of README.md&#10;&#10;Added README.md">
+    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#5 Create linux binary on every build&#10;&#10;Use correct archive path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/influx_alerter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/influx_alerter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,22 +28,12 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager" selected="Docker.Dockerfile">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="influx_alerter.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/bin/influx_alerter.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
@@ -91,7 +76,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624148036880</updated>
-      <workItem from="1624148040380" duration="6877000" />
+      <workItem from="1624148040380" duration="7616000" />
+      <workItem from="1624224869338" duration="1384000" />
     </task>
     <task id="LOCAL-00001" summary="#2 Fix package naming&#10;&#10;Update old name to the correct recent name">
       <created>1624151158643</created>
@@ -114,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624153636193</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#5 Create linux binary on every build&#10;&#10;Updated jenkinsfile and dockerfile to create proper binaries on build">
+      <created>1624222681691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624222681691</updated>
+    </task>
+    <task id="LOCAL-00005" summary="#5 Create linux binary on every build&#10;&#10;Use correct archive path">
+      <created>1624222770182</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624222770182</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,11 +130,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#2 Fix package naming&#10;&#10;Update old name to the correct recent name" />
     <MESSAGE value="#3 Add sample config&#10;&#10;Added a sample config file" />
     <MESSAGE value="#4 Update content of README.md&#10;&#10;Added README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="#4 Update content of README.md&#10;&#10;Added README.md" />
+    <MESSAGE value="#5 Create linux binary on every build&#10;&#10;Updated jenkinsfile and dockerfile to create proper binaries on build" />
+    <MESSAGE value="#5 Create linux binary on every build&#10;&#10;Use correct archive path" />
+    <option name="LAST_COMMIT_MESSAGE" value="#5 Create linux binary on every build&#10;&#10;Use correct archive path" />
   </component>
 </project>
