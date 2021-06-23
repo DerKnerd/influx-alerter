@@ -15,7 +15,7 @@ spec:
         path: /var/run/docker.sock
   containers:
   - name: docker
-    image: docker:latest
+    image: quay.imanuel.dev/dockerhub/library---docker:stable
     command:
     - cat
     tty: true
@@ -23,7 +23,7 @@ spec:
     - mountPath: /var/run/docker.sock
       name: docker-sock
   - name: dart
-    image: dart:stable
+    image: quay.imanuel.dev/dockerhub/library---dart:stable
     command:
     - cat
     tty: true

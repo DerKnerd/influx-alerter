@@ -1,4 +1,4 @@
-FROM dart:stable AS build
+FROM quay.imanuel.dev/dockerhub/library---dart:stable AS build
 
 # Resolve app dependencies.
 WORKDIR /app

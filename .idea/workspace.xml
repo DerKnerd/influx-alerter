@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Update Jenkinsfile for new quay server">
+    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Push latest tag to quay">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +81,7 @@
       <workItem from="1624148040380" duration="7616000" />
       <workItem from="1624224869338" duration="1384000" />
       <workItem from="1624313411116" duration="1267000" />
+      <workItem from="1624468626409" duration="2042000" />
     </task>
     <task id="LOCAL-00001" summary="#2 Fix package naming&#10;&#10;Update old name to the correct recent name">
       <created>1624151158643</created>
@@ -122,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624313473156</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Push latest tag to quay">
+      <created>1624468654472</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624468654472</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +157,7 @@
     <MESSAGE value="#5 Create linux binary on every build&#10;&#10;Updated jenkinsfile and dockerfile to create proper binaries on build" />
     <MESSAGE value="#5 Create linux binary on every build&#10;&#10;Use correct archive path" />
     <MESSAGE value="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Update Jenkinsfile for new quay server" />
-    <option name="LAST_COMMIT_MESSAGE" value="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Update Jenkinsfile for new quay server" />
+    <MESSAGE value="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Push latest tag to quay" />
+    <option name="LAST_COMMIT_MESSAGE" value="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Push latest tag to quay" />
   </component>
 </project>
