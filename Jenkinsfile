@@ -53,6 +53,7 @@ spec:
 
                     withDockerRegistry(credentialsId: 'quay.imanuel.dev', url: 'https://quay.imanuel.dev') {
                         sh "docker push quay.imanuel.dev/imanuel/influx-alerter:$BUILD_NUMBER"
+                        sh "docker push quay.imanuel.dev/imanuel/influx-alerter:latest"
                     }
                     withDockerRegistry(credentialsId: 'hub.docker.com', url: '') {
                         sh "docker push iulbricht/influx-alerter:$BUILD_NUMBER"
