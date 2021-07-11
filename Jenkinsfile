@@ -45,18 +45,18 @@ spec:
         stage('Push') {
             steps {
                 container('docker') {
-                    sh "docker build -t quay.imanuel.dev/imanuel/influx-alerter:$BUILD_NUMBER -f ./Dockerfile ."
-                    sh "docker tag quay.imanuel.dev/imanuel/influx-alerter:$BUILD_NUMBER quay.imanuel.dev/imanuel/influx-alerter:latest"
+                    sh "docker build -t quay.imanuel.dev/imanuel/influx-alerter:v1.$BUILD_NUMBER -f ./Dockerfile ."
+                    sh "docker tag quay.imanuel.dev/imanuel/influx-alerter:v1.$BUILD_NUMBER quay.imanuel.dev/imanuel/influx-alerter:latest"
 
-                    sh "docker tag quay.imanuel.dev/imanuel/influx-alerter:$BUILD_NUMBER iulbricht/influx-alerter:$BUILD_NUMBER"
-                    sh "docker tag quay.imanuel.dev/imanuel/influx-alerter:$BUILD_NUMBER iulbricht/influx-alerter:latest"
+                    sh "docker tag quay.imanuel.dev/imanuel/influx-alerter:v1.$BUILD_NUMBER iulbricht/influx-alerter:v1.$BUILD_NUMBER"
+                    sh "docker tag quay.imanuel.dev/imanuel/influx-alerter:v1.$BUILD_NUMBER iulbricht/influx-alerter:latest"
 
                     withDockerRegistry(credentialsId: 'quay.imanuel.dev', url: 'https://quay.imanuel.dev') {
-                        sh "docker push quay.imanuel.dev/imanuel/influx-alerter:$BUILD_NUMBER"
+                        sh "docker push quay.imanuel.dev/imanuel/influx-alerter:v1.$BUILD_NUMBER"
                         sh "docker push quay.imanuel.dev/imanuel/influx-alerter:latest"
                     }
                     withDockerRegistry(credentialsId: 'hub.docker.com', url: '') {
-                        sh "docker push iulbricht/influx-alerter:$BUILD_NUMBER"
+                        sh "docker push iulbricht/influx-alerter:v1.$BUILD_NUMBER"
                         sh "docker push iulbricht/influx-alerter:latest"
                     }
                 }
