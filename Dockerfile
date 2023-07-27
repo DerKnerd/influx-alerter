@@ -11,7 +11,7 @@ COPY . .
 RUN dart pub get --offline
 RUN dart compile exe bin/influx_alerter.dart -o bin/influx_alerter
 
-FROM scratch
+FROM quay.imanuel.dev/dockerhub/library---alpine:latest
 COPY --from=build /runtime/ /
 COPY --from=build /app/bin/influx_alerter /bin/
 

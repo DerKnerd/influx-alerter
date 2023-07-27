@@ -1,8 +1,8 @@
-import 'package:influxdb_client/api.dart';
-import 'package:logging/logging.dart';
 import 'package:influx_alerter/models/alert.dart';
 import 'package:influx_alerter/models/config.dart';
 import 'package:influx_alerter/models/target.dart';
+import 'package:influxdb_client/api.dart';
+import 'package:logging/logging.dart';
 
 Future checkAlerts(Configuration configuration) async {
   final logger = Logger('Checker');
@@ -39,7 +39,10 @@ Future _checkAlert(Alert alert, Iterable<MessageTarget> targets,
     final data = await queryService.query(alert.flux);
     logger.info('Get utc time');
     final utcTime = DateTime.now().toUtc();
-    if (utcTime.hour > alert.beforeHour && utcTime.hour < alert.afterHour) {
+    if (alert.beforeHour != null &&
+        alert.afterHour != null &&
+        utcTime.hour > alert.beforeHour! &&
+        utcTime.hour < alert.afterHour!) {
       logger.info('Alert is in time range');
       await data.forEach((entry) async {
         switch (alert.thresholdType) {

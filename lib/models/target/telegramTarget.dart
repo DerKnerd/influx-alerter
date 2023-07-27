@@ -1,16 +1,15 @@
-import 'package:teledart/teledart.dart';
-import 'package:teledart/telegram.dart';
 import 'package:influx_alerter/models/target.dart';
+import 'package:teledart/teledart.dart';
 
 class TelegramTarget extends MessageTarget {
-  String botToken;
-  Iterable<String> chatIds;
+  late String botToken;
+  late Iterable<String> chatIds;
 
   @override
   Future send(String message) async {
-    final teledart = TeleDart(Telegram(botToken), Event());
+    final teledart = TeleDart(botToken, Event(''));
     for (final id in chatIds) {
-      await teledart.telegram.sendMessage(id, message);
+      await teledart.sendMessage(id, message);
     }
   }
 

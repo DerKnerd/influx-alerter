@@ -1,21 +1,21 @@
 abstract class Alert {
-  String flux;
-  String message;
-  String name;
+  late String flux;
+  late String message;
+  late String name;
 }
 
 enum ThresholdType { above, below }
 
 class HourRangeAlert extends Alert {
-  int beforeHour;
-  int afterHour;
-  int threshold;
-  ThresholdType thresholdType;
+  int? beforeHour;
+  int? afterHour;
+  int? threshold;
+  late ThresholdType thresholdType;
 }
 
 class DeadManAlert extends Alert {}
 
 class ValueAlert extends Alert {
-  int threshold;
-  ThresholdType thresholdType;
+  int? threshold;
+  late ThresholdType thresholdType;
 }

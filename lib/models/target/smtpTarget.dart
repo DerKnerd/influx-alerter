@@ -4,13 +4,13 @@ import 'package:mailer/smtp_server.dart';
 import 'package:influx_alerter/models/target.dart';
 
 class SmtpTarget extends MessageTarget {
-  String host;
-  int port;
-  String username;
-  String password;
-  String from;
-  String to;
-  SmtpServer _server;
+  late String host;
+  int? port;
+  late String username;
+  late String password;
+  late String from;
+  late String to;
+  SmtpServer? _server;
   Logger logger = Logger('SmtpTarget');
 
   SmtpServer _getServer() {
@@ -22,7 +22,7 @@ class SmtpTarget extends MessageTarget {
       allowInsecure: true,
     );
 
-    return _server;
+    return _server!;
   }
 
   @override

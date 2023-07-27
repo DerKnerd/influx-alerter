@@ -1,0 +1,45 @@
+stages:
+  - test
+  - build
+
+test:
+  image: quay.imanuel.dev/dockerhub/library---golang:1.20-alpine
+  stage: test
+  script:
+    - go vet .
+    - go build -o docker-checker
+
+docker-build:
+  image: quay.imanuel.dev/dockerhub/library---docker:stable
+  stage: build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$QUAY_USER" -p "$QUAY_PASSWORD" quay.imanuel.dev
+    - docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_PASSWORD"
+  script:
+    - docker build -t "quay.imanuel.dev/imanuel/influx-alerter:v1.${CI_PIPELINE_IID}" -f ./Dockerfile .
+    - docker tag "quay.imanuel.dev/imanuel/influx-alerter:v1.0.${CI_PIPELINE_IID}" quay.imanuel.dev/imanuel/influx-alerter:latest
+    - docker tag "quay.imanuel.dev/imanuel/influx-alerter:v1.0.${CI_PIPELINE_IID}" "iulbricht/influx-alerter:v1.0.${CI_PIPELINE_IID}"
+    - docker tag "quay.imanuel.dev/imanuel/influx-alerter:v1.0.${CI_PIPELINE_IID}" iulbricht/influx-alerter:latest
+    - docker push "quay.imanuel.dev/imanuel/influx-alerter:1.0.${CI_PIPELINE_IID}"
+    - docker push "quay.imanuel.dev/imanuel/influx-alerter:latest"
+    - docker push "iulbricht/influx-alerter:v1.0.${CI_PIPELINE_IID}"
+    - docker push "iulbricht/influx-alerter:latest"
+  rules:
+    - if: $CI_COMMIT_BRANCH == "v1"
+      exists:
+        - Dockerfile
+
+binary-build-linux:
+  image: quay.imanuel.dev/dockerhub/library---dart:stable
+  stage: build
+  script:
+    - dart pub get
+    - dart pub get --offline
+    - dart compile exe bin/influx_alerter.dart -o bin/influx_alerter
+  artifacts:
+    paths:
+      - bin/influx_alerter
+  rules:
+    - if: $CI_COMMIT_BRANCH == "v1"

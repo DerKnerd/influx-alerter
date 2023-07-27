@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="Update Jenkinsfile and Dockerfile">
+    <list default="true" id="a02636a1-99cd-48fc-96ef-7cef018d8b6f" name="Default Changelist" comment="#7 Introduce version branches&#10;&#10;Update Jenkinsfile to follow new version branch based approach">
+      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/influx_alerter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/influx_alerter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis_options.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/analysis_options.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/influx_alerter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/influx_alerter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml.sample" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml.sample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/alerts/checker.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/alerts/checker.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/alert.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/alert.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/config.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/config.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/parser.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/parser.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/target.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/target.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/target/smtpTarget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/target/smtpTarget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/target/telegramTarget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/target/telegramTarget.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,26 +45,40 @@
   <component name="KubernetesApiPersistence">
     <option name="context" value="context-name" />
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="j0adl6ia" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="1uBnpwN5u6BSrRaclTP62YS2iYF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
-  </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
-    <configuration name="influx_alerter.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" nameIsGenerated="true">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "v1",
+    "last_opened_file_path": "/home/imanuel/Projects/influx_alerter",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Dart Command Line App.influx_alerter.dart">
+    <configuration name="influx_alerter.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="checkedMode" value="false" />
       <option name="filePath" value="$PROJECT_DIR$/bin/influx_alerter.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2" />
@@ -43,7 +86,6 @@
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
-          <option name="imageTag" value="" />
           <option name="containerName" value="" />
           <option name="sourceFilePath" value="Dockerfile" />
           <option name="volumeBindings">
@@ -65,6 +107,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.influx_alerter.dart" />
         <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
@@ -83,7 +126,8 @@
       <workItem from="1624468626409" duration="2669000" />
       <workItem from="1625347426485" duration="275000" />
       <workItem from="1625879321792" duration="8000" />
-      <workItem from="1625966676142" duration="28000" />
+      <workItem from="1625966676142" duration="1262000" />
+      <workItem from="1690417880962" duration="816000" />
     </task>
     <task id="LOCAL-00001" summary="#2 Fix package naming&#10;&#10;Update old name to the correct recent name">
       <created>1624151158643</created>
@@ -141,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624488280331</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#7 Introduce version branches&#10;&#10;Update Jenkinsfile to follow new version branch based approach">
+      <created>1625966722672</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625966722672</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +208,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#2 Fix package naming&#10;&#10;Update old name to the correct recent name" />
@@ -168,6 +218,7 @@
     <MESSAGE value="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Update Jenkinsfile for new quay server" />
     <MESSAGE value="#6 Update Jenkinsfile for quay.imanuel.dev&#10;&#10;Push latest tag to quay" />
     <MESSAGE value="Update Jenkinsfile and Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Jenkinsfile and Dockerfile" />
+    <MESSAGE value="#7 Introduce version branches&#10;&#10;Update Jenkinsfile to follow new version branch based approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="#7 Introduce version branches&#10;&#10;Update Jenkinsfile to follow new version branch based approach" />
   </component>
 </project>
